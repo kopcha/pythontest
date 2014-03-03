@@ -8,6 +8,7 @@ def main():
     print('Hello World')
     sayBye()
     sayBye()
+    sayBye()
 
 if __name__ == '__main__':
     main()
