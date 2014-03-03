@@ -7,6 +7,7 @@ from libs.common import sayBye
 def main():
     print('Hello World')
     sayBye()
+    sayBye()
 
 if __name__ == '__main__':
     main()
