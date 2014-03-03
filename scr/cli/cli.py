@@ -6,6 +6,8 @@ Created on Mar 3, 2014
 from libs.common import sayBye
 def main():
     print('Hello World')
+    print('Hello World')
+    print('Hello World')
     sayBye()
     sayBye()
     sayBye()
