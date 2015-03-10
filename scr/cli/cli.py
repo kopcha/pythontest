@@ -3,7 +3,9 @@ Created on Mar 3, 2014
 
 @author: xvok
 '''
-from libs.common import sort_dictionary_to_list
+from libs.common import sort_dictionary_to_list, release_products_in_prim
+
+
 def main():
     products = {'AXE10507/229': 'R1A',
                 'APT21009/229': 'R1A',
@@ -23,6 +25,7 @@ def main():
     print('Dictionary before sorting: {}'.format(products))
     sorted_dict = sort_dictionary_to_list(products)
     print('Dictionary after sorting: {}'.format(sorted_dict))
+    release_products_in_prim(sorted_dict)
 
 if __name__ == '__main__':
     main()

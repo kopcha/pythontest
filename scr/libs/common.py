@@ -20,13 +20,15 @@ def sort_dictionary_to_list(input_dict):
                       format(prod_no, r_state, prod_abc_class))
                 if prod_abc_class in LEVEL_PRIORITY[level_no]:
                     result.append((prod_no, r_state))
-                else:
-                    print('Product ABC class {} is not in the list!'.
-                          format(prod_abc_class))
             else:
                 print('Can not retrieve ABC class for {} {}'.
                       format(prod_no, r_state))
     return result
+
+
+def release_products_in_prim(products):
+    for prod_no, r_state in products:
+        print('{} {} is released!'.format(prod_no, r_state))
 
 LEVEL_PRIORITY = {0: ['CAA', 'CXA', 'CXC', 'CAAZ', 'CAAZA'],
                   1: ['CNT', 'CNTU'],
