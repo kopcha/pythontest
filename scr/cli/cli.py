@@ -1,9 +1,11 @@
-'''
+"""
 Created on Mar 3, 2014
 
 @author: xvok
-'''
-from libs.common import sort_dictionary_to_list, release_products_in_prim
+"""
+
+from my_functions.common import *
+from my_functions.dict2xml import *
 
 
 def main():
@@ -26,6 +28,9 @@ def main():
     sorted_dict = sort_dictionary_to_list(products)
     print('Dictionary after sorting: {}'.format(sorted_dict))
     release_products_in_prim(sorted_dict)
+
+    xml = demo_dicttoxml()
+    flush_to_file(file_path='/home/xvok/generated.xml', data=xml)
 
 if __name__ == '__main__':
     main()
